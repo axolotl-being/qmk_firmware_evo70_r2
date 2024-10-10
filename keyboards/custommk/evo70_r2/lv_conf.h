@@ -37,3 +37,6 @@
 
 #undef LV_FONT_MONTSERRAT_48
 #define LV_FONT_MONTSERRAT_48 0
+
+#undef LV_USE_GIF
+#define LV_USE_GIF 1

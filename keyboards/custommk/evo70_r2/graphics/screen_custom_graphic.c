@@ -24,8 +24,7 @@ lv_obj_t *screen_custom_graphic_overlay;
 
 LV_IMG_DECLARE(beachview);
 
-void screen_custom_graphic_init(void)
-{
+void screen_custom_graphic_init(void) {
     screen_custom_graphic = lv_obj_create(NULL);
     lv_obj_clear_flag( screen_custom_graphic, LV_OBJ_FLAG_SCROLLABLE );
     lv_obj_set_style_bg_color(screen_custom_graphic, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT );

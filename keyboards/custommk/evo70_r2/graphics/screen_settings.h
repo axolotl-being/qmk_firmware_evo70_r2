@@ -22,7 +22,7 @@ void settings_update_underglow_mode(uint8_t new_value);
 void settings_update_underglow_brightness(uint8_t new_value);
 void settings_update_underglow_hue(uint8_t new_value);
 void settings_update_temperature_units_are_f(bool new_value);
-void settings_update_display_timeout(uint8_t new_value);
+void settings_update_display_timeout(display_timeout_t new_value);
 void settings_update_time_format_is_24h(bool new_value);
 void settings_update_hide_seconds(bool new_value);
 void settings_update_year(uint16_t year);

@@ -30,8 +30,8 @@ void screen_custommk_logo_init(void) {
     lv_obj_set_style_bg_color(screen_custommk_logo, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT );
     lv_obj_set_style_bg_opa(screen_custommk_logo, 255, LV_PART_MAIN| LV_STATE_DEFAULT);
 
-    screen_custommk_logo_image = lv_img_create(screen_custommk_logo);
-    lv_img_set_src(screen_custommk_logo_image, &custommk_logo);
+    screen_custommk_logo_image = lv_gif_create(screen_custommk_logo);
+    lv_gif_set_src(screen_custommk_logo_image, &custommk_logo);
     lv_obj_set_width( screen_custommk_logo_image, LV_SIZE_CONTENT);
     lv_obj_set_height( screen_custommk_logo_image, LV_SIZE_CONTENT);
     lv_obj_set_align( screen_custommk_logo_image, LV_ALIGN_CENTER );
