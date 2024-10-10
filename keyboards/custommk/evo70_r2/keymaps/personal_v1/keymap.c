@@ -3,18 +3,6 @@
 
 #include QMK_KEYBOARD_H
 
-/*enum layers {
-  _COLEMAK = 0,
-  _QWERTY,
-  _LOWER,
-  _RAISE
-};*/
-
-/*enum keycodes {
-  COLEMAK = QK_USER_0, //use saferange if disabling via
-  QWERTY
-};*/
-
 
 enum custom_keycodes{
   ALT_TAB = QK_USER_0,
@@ -201,21 +189,7 @@ tap_dance_action_t tap_dance_actions[] = {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
-/*    case QWERTY:
-      if (record->event.pressed) {
-        rgblight_mode_noeeprom(2);
-        set_single_persistent_default_layer(1);
-      }
-      return false;
-      break;
-    case COLEMAK:
-      if (record->event.pressed) {
-        rgblight_reload_from_eeprom();
-        set_single_persistent_default_layer(0);
-      }
-      return false;
-      break;
-    */
+
   //tap backspace, hold is ctrl+bkspc
   case BCKSPC:
       if (!record->tap.count && record->event.pressed) {
